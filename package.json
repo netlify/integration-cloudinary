@@ -1,0 +1,22 @@
+{
+  "name": "cloudinary",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "ntli build -a",
+    "dev": "ntli dev -a",
+    "preview": "ntli preview"
+  },
+  "dependencies": {
+    "@netlify/sdk": "^1.0.3",
+    "cloudinary": "^1.40.0",
+    "glob": "^10.3.4",
+    "jsdom": "^22.1.0",
+    "node-fetch": "^3.3.2",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.3"
+  }
+}

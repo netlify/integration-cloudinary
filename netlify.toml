@@ -1,0 +1,20 @@
+[build]
+command = "ntli build -a"
+publish = ".ntli/site/static"
+
+[functions]
+directory = ".ntli/site/netlify/functions"
+node_bundler = "esbuild"
+external_node_modules = ["jsdom"]
+
+[[headers]]
+for = "/ui/*"
+[headers.values]
+Access-Control-Allow-Origin = "*"
+Access-Control-Allow-Headers = "*"
+Access-Control-Allow-Methods = "*"
+
+[dev]
+autoLaunch = false
+functions = ".ntli/site/netlify/functions"
+publish = ".ntli/site/static"
